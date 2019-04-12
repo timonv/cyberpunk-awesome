@@ -4,15 +4,15 @@ local icons = require('theme.icons')
 
 local tags = {
   {
-    icon = icons.chrome,
-    type = 'chrome',
-    defaultApp = 'google-chrome-beta',
+    icon = icons.firefox,
+    type = 'firefox',
+    defaultApp = 'firefox',
     screen = 1
   },
   {
     icon = icons.code,
     type = 'code',
-    defaultApp = 'code',
+    defaultApp = 'alacritty',
     screen = 1
   },
   {
@@ -21,30 +21,30 @@ local tags = {
     defaultApp = 'station',
     screen = 1
   },
-  {
-    icon = icons.folder,
-    type = 'files',
-    defaultApp = 'nautilus',
-    screen = 1
-  },
+  -- {
+  --   icon = icons.folder,
+  --   type = 'files',
+  --   defaultApp = 'nautilus',
+  --   screen = 1
+  -- },
   {
     icon = icons.music,
     type = 'music',
-    defaultApp = 'youtube-music',
+    defaultApp = 'spotify',
     screen = 1
   },
-  {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = '',
-    screen = 1
-  },
-  {
-    icon = icons.lab,
-    type = 'any',
-    defaultApp = '',
-    screen = 1
-  }
+  -- {
+  --   icon = icons.game,
+  --   type = 'game',
+  --   defaultApp = '',
+  --   screen = 1
+  -- },
+  -- {
+  --   icon = icons.lab,
+  --   type = 'any',
+  --   defaultApp = '',
+  --   screen = 1
+  -- }
 }
 
 awful.layout.layouts = {

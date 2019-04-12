@@ -17,6 +17,12 @@ awful.rules.rules = {
       placement = awful.placement.no_offscreen
     }
   },
+  { rule = { class = "Alacritty"},
+  properties = {
+    opacity = 0.95
+  }
+
+},
   {
     rule_any = {name = {'QuakeTerminal'}},
     properties = {skip_decoration = true}

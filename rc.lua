@@ -26,7 +26,8 @@ _G.root.keys(require('configuration.keys.global'))
 awful.screen.connect_for_each_screen(
   function()
     -- If wallpaper is a function, call it with the screen
-    gears.wallpaper.set(beautiful.wallpaper, 1, true)
+    -- gears.wallpaper.set(beautiful.wallpaper, 1, true)
+    gears.wallpaper.maximized("/home/timonv/.config/awesome/theme/wallpapers/cyberpunk.jpg", s)
   end
 )
 
@@ -60,6 +61,7 @@ _G.client.connect_signal(
   'focus',
   function(c)
     c.border_color = beautiful.border_focus
+
   end
 )
 _G.client.connect_signal(

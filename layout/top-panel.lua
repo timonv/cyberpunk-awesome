@@ -71,7 +71,7 @@ local LayoutBox = function(s)
 end
 
 local TopPanel = function(s, offset)
-  local offsetx = 0
+  local offsetx = true
   if offset == true then
     offsetx = dpi(48)
   end
@@ -105,7 +105,7 @@ local TopPanel = function(s, offset)
       layout = wibox.layout.fixed.horizontal,
       -- Create a taglist widget
       TaskList(s),
-      add_button
+      -- add_button
     },
     nil,
     {

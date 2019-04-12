@@ -6,17 +6,17 @@
 configuration {
 	display-drun:    "Activate";
 	display-run:     "Execute";
-	show-icons:      true;	
+	show-icons:      true;
 	sidebar-mode:    true;
 }
 
 * {
-	background-color:            rgb(18, 30, 37);
+	background-color:            #424242;
 	text-color:                  #d3d7cf;
-	selbg:                       rgb(0, 86, 136);
-	actbg:                       rgb(22, 37, 46);
+	selbg:                       #757575;
+	actbg:                       #757575;
 	urgbg:                       #e53935;
-	winbg:			     #26c6da;
+	winbg:			     #FB8C00;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
@@ -72,11 +72,11 @@ inputbar {
      children: [ entry ];
 }
 
-textbox-prompt-colon {                                                
-     text-color: inherit;                                              
-     expand: false;                                                    
+textbox-prompt-colon {
+     text-color: inherit;
+     expand: false;
      margin: 0 0.3em 0em 0em;
- }  
+ }
 
 listview {
 	spacing: 0em;
@@ -84,7 +84,7 @@ listview {
 	cycle:   true;
 }
 
-element { 
+element {
 	padding: 16px;
 	border:  0 0 0 5px solid;
 }

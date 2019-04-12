@@ -11,6 +11,12 @@ local globalKeys =
   awful.util.table.join(
   -- Hotkeys
   awful.key({modkey}, 'F1', hotkeys_popup.show_help, {description = 'show help', group = 'awesome'}),
+  awful.key({modkey}, 's',
+    function()
+      awful.util.spawn('flameshot gui')
+    end,
+    {description = 'take screenshot', group = 'awesome'}
+  ),
   -- Tag browsing
   awful.key({modkey}, 'w', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
   awful.key({modkey}, 's', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
@@ -156,14 +162,14 @@ local globalKeys =
     {description = 'restore minimized', group = 'client'}
   ),
   -- Dropdown application
-  awful.key(
-    {modkey},
-    '`',
-    function()
-      _G.toggle_quake()
-    end,
-    {description = 'dropdown application', group = 'launcher'}
-  ),
+  -- awful.key(
+  --   {modkey},
+  --   '`',
+  --   function()
+  --     _G.toggle_quake()
+  --   end,
+  --   {description = 'dropdown application', group = 'launcher'}
+  -- ),
   -- Widgets popups
   awful.key(
     {altkey},
